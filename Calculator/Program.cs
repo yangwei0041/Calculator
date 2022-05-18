@@ -27,6 +27,9 @@ namespace Calculator
                         result = num1 / num2;
                     }
                     break;
+                case "e":
+                    result = Math.Pow(num1,num2);
+                    break;
                 // Return text for an incorrect option entry.
                 default:
                     break;
@@ -78,6 +81,7 @@ namespace Calculator
                 Console.WriteLine("\ts - Subtract");
                 Console.WriteLine("\tm - Multiply");
                 Console.WriteLine("\td - Divide");
+                Console.WriteLine("\te - Exponentiate");
                 Console.Write("Your option? ");
 
                 string op = Console.ReadLine();
